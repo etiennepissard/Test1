@@ -1,0 +1,26 @@
+# Supress unnecessary warnings so that presentation looks clean
+import warnings
+warnings.filterwarnings('ignore')
+
+# Read raw data from the file
+
+import pandas #provides data structures to quickly analyze data
+#Since this code runs on Kaggle server, data can be accessed directly in the 'input' folder
+#Read the train dataset
+dataset = pandas.read_csv("../input/train.csv")
+
+#Read test dataset
+dataset_test = pandas.read_csv("../input/test.csv")
+#Save the id's for submission file
+ID = dataset_test['id']
+#Drop unnecessary columns
+dataset_test.drop('id',axis=1,inplace=True)
+
+#Print all rows and columns. Dont hide any
+pandas.set_option('display.max_rows', None)
+pandas.set_option('display.max_columns', None)
+
+#Display the first five rows to get a feel of the data
+print(dataset.head(5))
+
+#Learning : cat1 to cat116 contain alphabets
