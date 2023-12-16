@@ -1,81 +1,61 @@
-<html>
 
-    <style>
-        #users td, #users th, #other td, #other th{
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        #users th{
-            background-color: blue;
-            color: white;
-        }
-        
-
-    </style>
-
+<html lang="fr">
 
     <head>
-        <title>Page de test</title>
-        <meta charset="utf-80"/>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Débuter en parapente</title>
+        
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
     </head>
 
     <body>
 
-        <! ceci est un commentaire -- >
+        <nav class="navbar navbar-expand-lg navbar-light bg-success">
 
-        <table id="users">
-            <tr>
-                <th>Nom</th>
-                <th>Prénom</th>
-                <th>Email</th>
-            </tr>
+            <a class="navbar-brand" href="/">Débuter en parapente</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <tr>
-                <td>Seagle</td>
-                <td>Steven</td>
-                <td>steven@seagle.com</td>
-            </tr>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="theorie.html">La théorie du parapente </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pratique.html">La pratique en parapente </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-            <tr>
-                <td>Mirabel</td>
-                <td>Paul</td>
-                <td>paul@mirab.com</td>
-            </tr>
-        </table>
-    </br>
-        <table id="other">
-            <tr>
-                <th>Date</th>
-                <th>Lieu</th>
-            </tr>
-
-            <tr>
-                <td>Lundi Paris</td>
-                <td>Mardi Marseille</td>
-            </tr>
-        </table>
+        <header class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">Débuter en parapente</h1>
+                <p class="lead">Initiation au vol de parapente selon la FFVL (Fédération Française de Vol Libre)</p>
+            </div>
+        </header>
 
 
-        <h1>test de page html</h1>
-        <h2>Test</h2>
-        <h3>Exemple H3</h3>
-        <h4>Exemple H4</h4>
+        <section class="container mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2><a href="https://parapente.ffvl.fr/">Le site de la FFVL </a> </h2>
+                    <p>La Fédération française de Vol Libre est une association française loi de 1901 fondée le 12 mai 1974. Elle gère par délégation ministérielle officielle six activités principales : le deltaplane, le parapente, le cerf-volant, le kite terrestre, le speed riding et le boomerang.</p>
+                </div>
 
-        <p>Je suis un <strong>paragraphe</strong> et je vais être <br/>
-            <i>isolé</i> <span style="color : blue;">des autres</span>  <br/>
-            éléments <br/>
-            <span style="color : red;">je suis un span</span>
-
-        </p>
-
-
-
-        <ul>
-            <li>Google</li>
-            <li>Bing</li>
-            <li>Yahoo</li>
-        </ul>
-
+                <div class="col-md-6">
+                    <img src="https://federation.ffvl.fr/sites/ffvl.fr/files/FFVL_3.png" class="img-fluid" alt="Image de sport">
+                </div>
+            </div>
+        </section>
     </body>
-
 </html>
