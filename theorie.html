@@ -49,7 +49,7 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <img src="Image1.png" class="img-fluid" alt="ImagePrincipeAéro" width="600">
+                    <img src="ImagePrincipeAero" class="img-fluid" alt="ImagePrincipeAero" width="600">
                     <br>
                     <br>
                     <br>
@@ -60,7 +60,8 @@
             <div class="row">
                 <div class="col-md-7">
                     <br>
-                    <img src="Image2.png" class="img-fluid" alt="ImageDynamique vol">
+                    <img src="ImageDynamiqueVol.png" class="img-fluid" alt="ImageDynamiqueVol">
+
                 </div>
                 <div class="col-md-5">
                     <br>
@@ -70,6 +71,8 @@
                         Les ailes peuvent alors produire, tel un navire sur une mer houleuse, des mouvements de roulis et de tangage qui sont généralement amortis par une action de pilotage adéquat. <br>
                         Le mouvement de lacet peut se combiner au roulis et au tangage. On dit alors qu’il est induit (exemple : envirage).
                     </p>
+                    <br>
+                    <br>
                     <br>
                     <br>
                 </div>
@@ -84,12 +87,11 @@
                         À toutes les échelles, le vent naît d’une différence de pression entre un lieu et un autre.<br>
                         Le vent peut être analysé à l’échelle du globe ou d’un hémisphère (Nord pour nous) ; on pratique alors de la météorologie et cela nous permet de prévoir le temps qu’il fera...<br>
                         Le vent peut être analysé à une échelle locale (un site de vol, une topographie, un massif) ; c’est l’étude de la micro-aérologie ou de l’aérologie.<br>
-                        Ces connaissances aérologiques représentent 50% des compétences qu’un pilote doit réunir pour assurer sa sécurité (les autre 50% sont de la technique de pilotage).
-                    </p> 
-                    <div class="col-md-6">
-                        <img src="Image3.png" class="img-fluid" alt="ImageVent">
-                    </div>
+                        Ces connaissances aérologiques représentent 50% des compétences qu’un pilote doit réunir pour assurer sa sécurité (les autre 50% sont de la technique de pilotage).</p> 
+                    <img src="ImageVent.png" class="img-fluid" alt="ImageVent">
+                </div>
 
+                <div class="col-md-6">
                     <h4>La brise</h4>
                     <p>Une brise est un déplacement d’air local d’origine thermique.<br>
                         Le jour, le rayonnement solaire échauffe le sol qui, par conduction, va réchauffer l’air à son contact.<br>
@@ -97,11 +99,66 @@
                         La “brise de pente montante” ainsi créée appelle de l’air “libre” pour remplacer son volume.<br>
                         Cet air issu des plaines remonte les vallées. C’est la “brise de vallée montante”.<br>
                         La nuit, le sol se refroidissant, le phénomène s’inverse.<br>
-                        Le même mécanisme physique en bord de mer donne naissance aux brises de mer et de terre.
-                    </p>
-                    <div class="col-md-6">
-                        <img src="Image4.png" class="img-fluid" alt="ImageBrise">
-                    </div>
+                        Le même mécanisme physique en bord de mer donne naissance aux brises de mer et de terre.</p>
+                    <img src="ImageBrise.png" class="img-fluid" alt="ImageBrise">
                 </div>
+            </div>
+
         </section>
 
+        <section>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <script id="define-custom-element-wtd-root">
+                (() => {
+                    window.customElements.whenDefined('wtd-root').then(() => {
+                    window.dispatchEvent(
+                    new CustomEvent('customElements.defined', {
+                            detail: {
+                            name: 'wtd-root',
+                            },
+                        }),
+                    );
+                    });
+
+                    if (window.customElements.get('wtd-root')) return;
+
+                    window.customElements.define('wtd-root', class extends HTMLElement {
+                    constructor() {
+                        super();
+                        this.attachShadow({ mode: 'open' });
+                    }
+                    });
+                })();
+            </script>
+            <wtd-root id="cashback">
+            </wtd-root>
+            <script id="define-custom-element-wtd-div">
+                (() => {
+                    window.customElements.whenDefined('wtd-div').then(() => {
+                    window.dispatchEvent(
+                        new CustomEvent('customElements.defined', {
+                            detail: {
+                            name: 'wtd-div',
+                            },
+                        }),
+                    );
+                    });
+                    if (window.customElements.get('wtd-div')) return;
+                    window.customElements.define('wtd-div', class extends HTMLElement {
+                    constructor() {
+                        super();
+                    }
+                    });
+                })();
+            </script>
+            <wtd-div id="wanteeedContainer" style="position: fixed; display: block; top: 0px; right: 0px; z-index: 2147483647;"><wtd-root id="comparator"></wtd-root>
+            <iframe id="wanteeedPanel" data-version="1.108.0" allowtransparency="true" style="background-color: rgb(255, 255, 255); border: none; border-radius: 3px; box-shadow: rgb(181, 181, 181) 1px 1px 3px 2px; clip: auto; display: none; margin-left: auto; margin-right: 12px; margin-top: 12px; position: relative; z-index: 2147483647; height: 1px; width: 1px;">
+            </iframe>
+            </wtd-div>
+            <iframe id="wanteeedTestMaker" data-version="1.108.0" allowtransparency="true" style="border: none; clip: auto; display: none; left: 0px; overflow: hidden; position: fixed; top: 10px; transition: all 0.2s ease-out 0s; z-index: 45739864; height: 1px; width: 1px;">
+            </iframe>
+        </section>
+    </body>
+</html>

@@ -88,7 +88,7 @@
                     2.Prise de contact aux freins et appui ventral (valident, avec la prise du cap, la décision d’engager le décollage).<br>
                     3.Prise de vitesse / envol.
                 </p>
-                <img src="Image5.png" class="img-fluid" alt="Image3phasesdecollage" width="600" center>
+                <img src="ImagePhaseDeco.png" class="img-fluid" alt="ImagePhaseDeco" width="600" center>
                 <br>
                 <br>  
         </section>
@@ -99,7 +99,7 @@
                 <div class="col-md-6">
                     <br>
                     <br>
-                    <img src="Image6.png" class="img-fluid" alt="ImageAttero" aline="bottom">
+                    <img src="ImageAttero.png" class="img-fluid" alt="ImageAttero" aline="bottom">
                     <br>
                     <br>
                 </div>
@@ -122,3 +122,60 @@
             </div>
         </section>
 
+
+        <section>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <script id="define-custom-element-wtd-root">
+                (() => {
+                    window.customElements.whenDefined('wtd-root').then(() => {
+                    window.dispatchEvent(
+                    new CustomEvent('customElements.defined', {
+                            detail: {
+                            name: 'wtd-root',
+                            },
+                        }),
+                    );
+                    });
+
+                    if (window.customElements.get('wtd-root')) return;
+
+                    window.customElements.define('wtd-root', class extends HTMLElement {
+                    constructor() {
+                        super();
+                        this.attachShadow({ mode: 'open' });
+                    }
+                    });
+                })();
+            </script>
+            <wtd-root id="cashback">
+            </wtd-root>
+            <script id="define-custom-element-wtd-div">
+                (() => {
+                    window.customElements.whenDefined('wtd-div').then(() => {
+                    window.dispatchEvent(
+                        new CustomEvent('customElements.defined', {
+                            detail: {
+                            name: 'wtd-div',
+                            },
+                        }),
+                    );
+                    });
+                    if (window.customElements.get('wtd-div')) return;
+                    window.customElements.define('wtd-div', class extends HTMLElement {
+                    constructor() {
+                        super();
+                    }
+                    });
+                })();
+            </script>
+            <wtd-div id="wanteeedContainer" style="position: fixed; display: block; top: 0px; right: 0px; z-index: 2147483647;"><wtd-root id="comparator"></wtd-root>
+            <iframe id="wanteeedPanel" data-version="1.108.0" allowtransparency="true" style="background-color: rgb(255, 255, 255); border: none; border-radius: 3px; box-shadow: rgb(181, 181, 181) 1px 1px 3px 2px; clip: auto; display: none; margin-left: auto; margin-right: 12px; margin-top: 12px; position: relative; z-index: 2147483647; height: 1px; width: 1px;">
+            </iframe>
+            </wtd-div>
+            <iframe id="wanteeedTestMaker" data-version="1.108.0" allowtransparency="true" style="border: none; clip: auto; display: none; left: 0px; overflow: hidden; position: fixed; top: 10px; transition: all 0.2s ease-out 0s; z-index: 45739864; height: 1px; width: 1px;">
+            </iframe>
+        </section>
+    </body>
+</html>
