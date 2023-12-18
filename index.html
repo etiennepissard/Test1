@@ -28,10 +28,10 @@
                         <a class="nav-link" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="theorie.html">La théorie du parapente </a>
+                        <a class="nav-link" href="theorie.html">La théorie en parapente </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pratique.html">La pratique en parapente </a>
+                        <a class="nav-link" href="pratique.html">La pratique du parapente </a>
                     </li>
                 </ul>
             </div>
@@ -45,63 +45,80 @@
         </header>
 
 
-        <section class="container mt-4">
+        <section class="container mt-1">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-10">
                     <h2><a href="https://parapente.ffvl.fr/">Le site de la FFVL </a> </h2>
-                    <p>La Fédération française de Vol Libre est une association française loi de 1901 fondée le 12 mai 1974. Elle gère par délégation ministérielle officielle six activités principales : le deltaplane, le parapente, le cerf-volant, le kite terrestre, le speed riding et le boomerang.</p>
+                    <p style = "text-align: justify;">La Fédération française de Vol Libre est une association française loi de 1901 fondée le 12 mai 1974. Elle gère par délégation ministérielle officielle six activités principales : le deltaplane, le parapente, le cerf-volant, le kite terrestre, le speed riding et le boomerang.</p>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-2">
                     <img src="https://federation.ffvl.fr/sites/ffvl.fr/files/FFVL_3.png" class="img-fluid" alt="Image de sport">
                 </div>
+                <br>
+                <br>
+                <img src = "giphy.gif" style="max-width: 100%; max-height:100% ; margin: 0 auto;">
+                <br>
             </div>
         </section>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script id="define-custom-element-wtd-root">
-            (() => {
-                window.customElements.whenDefined('wtd-root').then(() => {
-                window.dispatchEvent(
+        <br>
+
+        <footer class="text-center py-4 bg-light">
+            <p>© 2023 Débuter en Parapente. Tous droits réservés.</p>
+        </footer>        
+        <section>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <script id="define-custom-element-wtd-root">
+                (() => {
+                    window.customElements.whenDefined('wtd-root').then(() => {
+                    window.dispatchEvent(
                     new CustomEvent('customElements.defined', {
-                        detail: {
-                        name: 'wtd-root',
-                        },
-                    }),
-                );
-                });
+                            detail: {
+                            name: 'wtd-root',
+                            },
+                        }),
+                    );
+                    });
 
-                if (window.customElements.get('wtd-root')) return;
+                    if (window.customElements.get('wtd-root')) return;
 
-                window.customElements.define('wtd-root', class extends HTMLElement {
-                constructor() {
-                    super();
-                    this.attachShadow({ mode: 'open' });
-                }
-                });
-            })();
-            </script><wtd-root id="cashback"></wtd-root><script id="define-custom-element-wtd-div">
-            (() => {
-                window.customElements.whenDefined('wtd-div').then(() => {
-                window.dispatchEvent(
-                    new CustomEvent('customElements.defined', {
-                        detail: {
-                        name: 'wtd-div',
-                        },
-                    }),
-                );
-                });
-
-                if (window.customElements.get('wtd-div')) return;
-
-                window.customElements.define('wtd-div', class extends HTMLElement {
-                constructor() {
-                    super();
-            
-                }
-                });
-            })();
-        </script><wtd-div id="wanteeedContainer" style="position: fixed; display: block; top: 0px; right: 0px; z-index: 2147483647;"><wtd-root id="comparator"></wtd-root><iframe id="wanteeedPanel" data-version="1.108.0" allowtransparency="true" style="background-color: rgb(255, 255, 255); border: none; border-radius: 3px; box-shadow: rgb(181, 181, 181) 1px 1px 3px 2px; clip: auto; display: none; margin-left: auto; margin-right: 12px; margin-top: 12px; position: relative; z-index: 2147483647; height: 1px; width: 1px;"></iframe></wtd-div><iframe id="wanteeedTestMaker" data-version="1.108.0" allowtransparency="true" style="border: none; clip: auto; display: none; left: 0px; overflow: hidden; position: fixed; top: 10px; transition: all 0.2s ease-out 0s; z-index: 45739864; height: 1px; width: 1px;"></iframe></body></html>
+                    window.customElements.define('wtd-root', class extends HTMLElement {
+                    constructor() {
+                        super();
+                        this.attachShadow({ mode: 'open' });
+                    }
+                    });
+                })();
+            </script>
+            <wtd-root id="cashback">
+            </wtd-root>
+            <script id="define-custom-element-wtd-div">
+                (() => {
+                    window.customElements.whenDefined('wtd-div').then(() => {
+                    window.dispatchEvent(
+                        new CustomEvent('customElements.defined', {
+                            detail: {
+                            name: 'wtd-div',
+                            },
+                        }),
+                    );
+                    });
+                    if (window.customElements.get('wtd-div')) return;
+                    window.customElements.define('wtd-div', class extends HTMLElement {
+                    constructor() {
+                        super();
+                    }
+                    });
+                })();
+            </script>
+            <wtd-div id="wanteeedContainer" style="position: fixed; display: block; top: 0px; right: 0px; z-index: 2147483647;"><wtd-root id="comparator"></wtd-root>
+            <iframe id="wanteeedPanel" data-version="1.108.0" allowtransparency="true" style="background-color: rgb(255, 255, 255); border: none; border-radius: 3px; box-shadow: rgb(181, 181, 181) 1px 1px 3px 2px; clip: auto; display: none; margin-left: auto; margin-right: 12px; margin-top: 12px; position: relative; z-index: 2147483647; height: 1px; width: 1px;">
+            </iframe>
+            </wtd-div>
+            <iframe id="wanteeedTestMaker" data-version="1.108.0" allowtransparency="true" style="border: none; clip: auto; display: none; left: 0px; overflow: hidden; position: fixed; top: 10px; transition: all 0.2s ease-out 0s; z-index: 45739864; height: 1px; width: 1px;">
+            </iframe>
+        </section>
     </body>
 </html>
